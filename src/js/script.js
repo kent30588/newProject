@@ -21,5 +21,48 @@
 
 Проверить, чтобы все работало без ошибок в консоли */
 
+//Мое решение
+
 'use strict';
 
+
+//const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//const lastМiewedЬovie = prompt('Один из последних просмотренных фильмов?', '');
+//const value = prompt('На сколько оцените его?', '');
+//const lastМiewedЬovie2 = prompt('Один из последних просмотренных фильмов?', '');
+//const value2 = prompt('На сколько оцените его?', '');
+
+
+//const personalMovieDB = {
+//	count: numberOfFilms,
+//	movies: {
+//		lastМiewedЬovie, value, lastМiewedЬovie2, value2 
+//	},
+//	actors: {},
+//	genres: [],
+//	privat: false
+//};
+
+//console.log(personalMovieDB);
+
+//Правильное решение
+
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMovieDB = {
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat: false
+};
+
+const a = prompt('Один из последних просмотренных фильмов?', '');
+const b = prompt('На сколько оцените его?', '');
+const c = prompt('Один из последних просмотренных фильмов?', '');
+const d = prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
