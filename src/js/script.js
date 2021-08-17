@@ -150,3 +150,11 @@ while (i) {
         i++;
     }
 }
+
+// мое решение задания №3
+
+let c = (personalMovieDB.count < 10) ? 'Просмотрено довольно мало фильмов' :
+    (personalMovieDB.count >= 10 < 30) ? 'Вы классический зритель' :
+    (personalMovieDB.count >= 30) ? 'Вы киноман' :
+    'Произошла ошибка';
+alert(c);
