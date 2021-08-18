@@ -49,15 +49,15 @@ console.log(personalMovieDB);
 
 //Правильное решение
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+//const personalMovieDB = {
+//    count: numberOfFilms,
+//    movies: {},
+//    actors: {},
+//    genres: [],
+//    privat: false
+//};
 
 
 //let a = prompt('Один из последних просмотренных фильмов?', '');
@@ -68,7 +68,7 @@ const personalMovieDB = {
 //personalMovieDB.movies[a] = b;
 //personalMovieDB.movies[c] = d;
 
-console.log(personalMovieDB);
+//console.log(personalMovieDB);
 
 
 /* Задание на урок:
@@ -139,22 +139,64 @@ console.log(personalMovieDB);
 */
 
 // мое решение циклом while
-let i = 2;
-while (i) {
-    let a = prompt('Один из последних просмотренных фильмов?', '');
-    let b = prompt('На сколько оцените его?', '');
-    i--;
-    if (a != '' && b != '' && a != null && b != null && a.length < 50) {
-        personalMovieDB.movies[a] = b;
-    } else {
-        i++;
-    }
-}
+//let i = 2;
+//while (i) {
+//    let a = prompt('Один из последних просмотренных фильмов?', '');
+//    let b = prompt('На сколько оцените его?', '');
+//    i--;
+//    if (a != '' && b != '' && a != null && b != null && a.length < 50) {
+//        personalMovieDB.movies[a] = b;
+//    } else {
+//        i++;
+//    }
+//}
 
 // мое решение задания №3
 
-let c = (personalMovieDB.count < 10) ? 'Просмотрено довольно мало фильмов' :
-    (personalMovieDB.count >= 10 < 30) ? 'Вы классический зритель' :
-    (personalMovieDB.count >= 30) ? 'Вы киноман' :
-    'Произошла ошибка';
-alert(c);
+//let c = (personalMovieDB.count < 10) ? 'Просмотрено довольно мало фильмов' :
+//    (personalMovieDB.count >= 10 < 30) ? 'Вы классический зритель' :
+//    (personalMovieDB.count >= 30) ? 'Вы киноман' :
+//    'Произошла ошибка';
+//alert(c);
+
+// Функции
+//let num = 20;
+
+//function showFirstMwssage(text) {
+//    console.log(text);
+//    // let num = 10;
+//    console.log(num);
+//}
+//showFirstMwssage('Hello World!');
+////console.log(num);
+
+////console.log(calc(4, 9)); // 13
+////console.log(calc(10, 9)); // 19
+////console.log(calc(10, 25)); // 35
+
+//function calc(a, b) {
+//    return (a + b);
+//}
+
+//console.log(calc(4, 9)); // 13
+//console.log(calc(10, 9)); // 19
+//console.log(calc(10, 25)); // 35
+
+//function ret() {
+//    let num = 50;
+//    //
+//    //какой то код
+//    //
+//    return num;
+//}
+
+//const anotherNum = ret(); // присваеваем переменной результат выполнения функции
+//console.log(anotherNum); //50
+
+
+////log();
+//const log = function() {
+//    console.log('Hello!');
+//};
+
+//log();
