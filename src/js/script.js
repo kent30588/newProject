@@ -200,3 +200,38 @@ console.log(personalMovieDB);
 //};
 
 //log();
+
+// Методы и свойства строк и чисел
+
+//const str = 'test';
+//console.log(str.length);// покажет кол-во символов в переменной str
+
+//const arr = [1, 2, 5, 7, 2];
+//console.log(arr.length);// 5
+
+//const str = 'teST';
+//console.log(str.toUpperCase());// TEST
+//console.log(str);//teST
+
+//let a = str.toUpperCase();
+//console.log(a);// TEST
+
+//const fruit = 'Some fruit';
+//console.log(fruit.indexOf('fruit'));//5
+
+//const logg = 'Hello world';
+//console.log(logg.slice(6, 11)); // world
+//const a = logg.slice(6, 11);
+//console.log(a);
+
+//const logg = 'Hello world';
+//console.log(logg.substr(6, 5));// второе значение в аргументах означет сколько символов нам нужно вырезать
+////после первого аргумента
+
+const num = 12.5;
+console.log(Math.round(num));//13
+
+const test = '13.7';
+console.log(parseInt(test));//13
+
+
