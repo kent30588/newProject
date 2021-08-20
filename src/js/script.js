@@ -201,7 +201,6 @@ console.log(personalMovieDB);
 
 //log();
 
-<<<<<<< HEAD
 // Методы и свойства строк и чисел
 
 //const str = 'test';
@@ -235,8 +234,6 @@ console.log(Math.round(num));//13
 const test = '13.7';
 console.log(parseInt(test));//13
 
-
-=======
 /* Задание на урок:
 
 1) Первую часть задания повторить по уроку
@@ -311,4 +308,3 @@ function writeYourGenres() {
     }
 }
 writeYourGenres();
->>>>>>> refs/remotes/origin/main
