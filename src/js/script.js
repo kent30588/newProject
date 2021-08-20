@@ -228,11 +228,11 @@ console.log(personalMovieDB);
 //console.log(logg.substr(6, 5));// второе значение в аргументах означет сколько символов нам нужно вырезать
 ////после первого аргумента
 
-const num = 12.5;
-console.log(Math.round(num));//13
+//const num = 12.5;
+//console.log(Math.round(num));//13
 
-const test = '13.7';
-console.log(parseInt(test));//13
+//const test = '13.7';
+//console.log(parseInt(test));//13
 
 /* Задание на урок:
 
@@ -247,64 +247,64 @@ genres
 
 P.S. Функции вызывать не обязательно*/
 
-let numberOfFilms;
+//let numberOfFilms;
 
-function start() {
-    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//function start() {
+//    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
-        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
-    }
-}
-//start();
+//    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+//        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//    }
+//}
+////start();
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+//const personalMovieDB = {
+//    count: numberOfFilms,
+//    movies: {},
+//    actors: {},
+//    genres: [],
+//    privat: false
+//};
 
-function rememberMyFilms() {
-    for (let i = 0; i < 2; i++) {
-        const a = prompt('Один из последних просмотренных фильмов?', '');
-        const b = prompt('На сколько оцените его?', '');
+//function rememberMyFilms() {
+//    for (let i = 0; i < 2; i++) {
+//        const a = prompt('Один из последних просмотренных фильмов?', '');
+//        const b = prompt('На сколько оцените его?', '');
 
-        if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-            personalMovieDB.movies[a] = b;
-            console.log('Done');
-        } else {
-            console.log('Error');
-            i--;
-        }
-    }
-}
-//rememberMyFilms();
+//        if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//            personalMovieDB.movies[a] = b;
+//            console.log('Done');
+//        } else {
+//            console.log('Error');
+//            i--;
+//        }
+//    }
+//}
+////rememberMyFilms();
 
-function detectPersonalLevel() {
-    if (personalMovieDB.count < 10) {
-        alert('"Просмотрено довольно мало фильмов"');
-    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-        alert("Вы классический зритель");
-    } else if (personalMovieDB.count >= 30) {
-        alert("Вы киноман");
-    } else {
-        alert("Произошла ошибка");
-    }
-}
-//detectPersonalLevel();
+//function detectPersonalLevel() {
+//    if (personalMovieDB.count < 10) {
+//        alert('"Просмотрено довольно мало фильмов"');
+//    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//        alert("Вы классический зритель");
+//    } else if (personalMovieDB.count >= 30) {
+//        alert("Вы киноман");
+//    } else {
+//        alert("Произошла ошибка");
+//    }
+//}
+////detectPersonalLevel();
 
-function showMyDB() {
-    if (personalMovieDB.privat === false) {
-        console.log(personalMovieDB);
-    }
-}
-showMyDB();
+//function showMyDB(hidden) {
+//    if (!hidden) {
+//        console.log(personalMovieDB);
+//    }
+//}
+//showMyDB(personalMovieDB.privat);
 
-function writeYourGenres() {
-    for (let i = 1; i < 4; i++) {
-        personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i} ?`, '');
-    }
-}
-writeYourGenres();
+//function writeYourGenres() {
+//    for (let i = 1; i < 4; i++) {
+//        personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i} ?`, '');
+//    }
+//}
+//writeYourGenres();
