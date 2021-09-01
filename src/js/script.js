@@ -256,7 +256,7 @@ P.S. Функции вызывать не обязательно*/
 //        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 //    }
 //}
-////start();
+//////start();
 
 //const personalMovieDB = {
 //    count: numberOfFilms,
@@ -280,7 +280,7 @@ P.S. Функции вызывать не обязательно*/
 //        }
 //    }
 //}
-////rememberMyFilms();
+//rememberMyFilms();
 
 //function detectPersonalLevel() {
 //    if (personalMovieDB.count < 10) {
@@ -308,3 +308,33 @@ P.S. Функции вызывать не обязательно*/
 //    }
 //}
 //writeYourGenres();
+
+//Массивы
+//const arr = [1, 2, 3, 6, 8];
+//arr[99] = 0;
+//console.log(arr.length);
+//console.log(arr);
+//arr.pop();
+//arr.push(2);
+//console.log(arr);
+//for (let i = 0; i < arr.length; i++) {
+//    console.log(arr[i]);
+//}
+
+//for (let a of arr) {
+//    console.log(a);
+//}
+//arr.forEach(function(item, i) {
+//    console.log(`${i}: ${item} внутри массива ${arr}`);
+//});
+
+//const str = prompt('', '');
+//const products = str.split(', ');
+//products.sort();
+//console.log(products.join(':'));
+//function compareNum(a, b) {
+//    return a - b;
+//}
+//const arr = [10, 13, 9, 1, 8, 12];
+//arr.sort(compareNum);
+//console.log(arr);

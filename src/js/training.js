@@ -6,7 +6,7 @@
 //	//какойто код , который долго выполняется
 //	setTimeout(function () {
 //		console.log(1);
-		
+
 //	}, 500);
 //}
 
@@ -30,11 +30,11 @@
 
 //let name = "Ilya";
 
-//alert( `hello ${1}` ); // ?
+//alert( `hello ${1}` ); 
 
-//alert( `hello ${"name"}` ); // ?
+//alert( `hello ${"name"}` ); 
 
-//alert( `hello ${name}` ); // ?
+//alert( `hello ${name}` ); 
 
 // Объекты, диструктуризация объектов
 
@@ -71,19 +71,19 @@
 //console.log(options);
 
 //чтобы перебрать все свойства объекта, создаем конструкцию for in
-//let counter = 0;// переменная для счетчика свойств
+//let counter = 0; // переменная для счетчика свойств
 //for (let key in options) {
-//	if (typeof (options[key]) === "object") {// если како-либо ключ имеет значение object а в нашем случае это colors , выполнять действия
-//		for (let i in options[key]) {// перебор свойства colors и остальных если такие будут
-//			console.log(`Свойство ${i} имеет значение ${options[key][i]}`);// {options[key][i]} - дает нам возможность достучаться до объекта в объекте
-//			counter++;// для пересчета свойст
-//		}
-//	} else {
-//		console.log(`Свойство ${key} имеет значение ${options[key]}`);// выведет Свойство name имеет значение test Свойсто width имееет значение 1024 и т.д.
-//		counter++;// для пересчета свойст
-//	}
+//    if (typeof(options[key]) === "object") { // если како-либо ключ имеет значение object а в нашем случае это colors , выполнять действия
+//        for (let i in options[key]) { // перебор свойства colors и остальных если такие будут
+//            console.log(`Свойство ${i} имеет значение ${options[key][i]}`); // {options[key][i]} - дает нам возможность достучаться до объекта в объекте
+//            counter++; // для пересчета свойст
+//        }
+//    } else {
+//        console.log(`Свойство ${key} имеет значение ${options[key]}`); // выведет Свойство name имеет значение test Свойсто width имееет значение 1024 и т.д.
+//        counter++; // для пересчета свойст
+//    }
 //}
-//console.log(counter);//выведет 5
+//console.log(counter); //выведет 5
 
 //let salaries = {
 //	John: 100,
