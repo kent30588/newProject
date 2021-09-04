@@ -312,3 +312,42 @@
 //console.log(soliderJhon);
 ////console.log(soliderJhon.armor);
 //soliderJhon.sayHello();
+
+//                                               Динамическая типизация - то возможность одного типа данных превращаться в другой тип данных
+//To String
+//1) способ - Редко используемый способ
+console.log(typeof (String(null)));//строка
+console.log(typeof (String(4)));// строка
+//2)способ - Конкатинация
+console.log(typeof (5));// Number
+console.log(typeof (5 + ""));// String 
+const num = 5;
+console.log('https://vk.com/catalog/' + num);// String
+//To Number
+//1) способ- Редко используемый способ
+console.log(typeof (Number('4')));
+//2) способ-Унарный плюс
+console.log(typeof (+'4'));
+//Metod
+console.log(typeof (parseInt('4px', 10)));
+
+//To Boolean
+
+// 0, '', null, undefined, Nan : Всегда false
+//1 способ-
+let swither = null;
+if (swither) {
+	console.log('Working...');// не выполнится , т.к. swither = false
+}
+
+swither = 1;
+if (swither) {
+	console.log('Working...');// Изменилось значение на true>программа запустится
+}
+
+//2 способ-
+console.log(typeof (Boolean(4)));
+
+//3 способ-
+console.log(typeof (!!'22222'));
+
