@@ -351,34 +351,6 @@
 ////3 способ-
 //console.log(typeof (!!'22222'));
 
-//                                             Получение элементов со страницы DOm (объектная модель документа)
-//Получаем по ID
-const box = document.getElementById('box'); // Получаем элемент с id box
-console.log(box);
-//Получение по тегам
-
-const btns = document.getElementsByTagName('button');// Получим коллекцию из элементов с тегом button (псевдомассив) - без методов
-//Даже если тег будет на страницы в единственном экземпляре
-btns[1].style.background = 'red';
-
-//Получаем элемент по классу
-const circles = document.getElementsByClassName('circle');// Получаем псевдомассив
-console.log(circles);
-
-<<<<<<< HEAD
-//Более совершенные методы
-const heart = document.querySelectorAll('.heart');// получаем все эелементы с классом .heart
-console.log(heart);
-heart.forEach(item => {
-	console.log(item);
-});
-
-const oneHeart = document.querySelector('.heart');// получим первый элемент 
-console.log(oneHeart);
-=======
-//3 способ-
-console.log(typeof (!!'22222'));
-*/
 
 // Решение задачек
 
@@ -426,4 +398,29 @@ console.log(typeof (!!'22222'));
 
 //•	Чему равно 0 || "" || 2 || undefined || true || falsе ? = 2 т.к. 0 - false, пустая строка false, 2 - true, дальше код не идет
 //console.log(0 || "" || 2 || undefined || true || falsе);
->>>>>>> b2f464d9977d9ac27acee69814b9856483e7d59c
+*/
+
+//                                             Получение элементов со страницы DOm (объектная модель документа)
+//Получаем по ID
+//const box = document.getElementById('box'); // Получаем элемент с id box
+//console.log(box);
+////Получение по тегам
+
+//const btns = document.getElementsByTagName('button');// Получим коллекцию из элементов с тегом button (псевдомассив) - без методов
+////Даже если тег будет на страницы в единственном экземпляре
+//btns[1].style.background = 'red';
+
+////Получаем элемент по классу
+//const circles = document.getElementsByClassName('circle');// Получаем псевдомассив
+//console.log(circles);
+
+
+////Более совершенные методы
+//const heart = document.querySelectorAll('.heart');// получаем все эелементы с классом .heart
+//console.log(heart);
+//heart.forEach(item => {
+//	console.log(item);
+//});
+
+//const oneHeart = document.querySelector('.heart');// получим первый элемент 
+//console.log(oneHeart);
