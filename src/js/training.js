@@ -432,9 +432,10 @@
 //const circles = document.getElementsByClassName('circle');
 //const hearts = document.querySelectorAll('.heart');
 //const oneHeart = document.querySelector('.heart');
+//const wrapper = document.querySelector('.wrapper');
 
 ////console.dir(box);
-//box.style.backgroundColor = 'blue';//Инлайн стили
+//box.style.backgroundColor = 'blue'; //Инлайн стили
 //box.style.width = '500px';
 //box.style.cssText = 'background-color: blue; width: 500px;';
 //let width = 200;
@@ -442,12 +443,40 @@
 //btns[1].style.borderRadius = '100%';
 //circles[0].style.backgroundColor = 'red';
 
-//for (let i = 0; i < hearts.length; i++){
-//	hearts[i].style.backgroundColor = 'blue';
+//for (let i = 0; i < hearts.length; i++) {
+//    hearts[i].style.backgroundColor = 'blue';
 //}
 //hearts.forEach(item => {
-//	item.style.backgroundColor = 'blue';
+//    item.style.backgroundColor = 'blue';
 //});
 
 // Создаем элемент
-const div = document.createElement('div');
+//const div = document.createElement('div'); // создали Элемент который видно только в JS
+//div.classList.add('black'); //элементу div назначаем стили по селектору .black
+//document.body.append(div); // добавили элемент div на страницу в конец body
+
+//document.querySelector('.wrapper').append(div);
+//wrapper.append(div);
+//wrapper.appendChild(div);
+
+
+//wrapper.prepend(div);
+//hearts[0].before(div);
+//hearts[0].after(div);
+
+// удалить элемент объект
+//circles[0].remove();
+//wrapper.remove();
+
+// один элемент заменить другим
+
+//hearts[0].replaceWith(div); // заменили первое сердечко на прямоугольник div
+//hearts[0].replaceWith(circles[1]);
+
+//Редактирование элементов
+
+//div.innerHTML = 'Hello World';
+//div.innerHTML = "<h1>Hello World</h1>";
+//div.textContent = '<h1>Hello World</h1>'; // добавляет только текст. Использовать нужно если мы четко знаем что от пользователя мы хотим получить только текст
+
+//div.insertAdjacentHTML('beforebegin', "<h2>Hello</h2>");
