@@ -792,11 +792,11 @@
 
 //let str = '565';
 //let number = str.split([]);
-//let number = '794';
+//let number = '7945';
 //let sum = 0;
 ////number.forEach(function (item, i, number) {
-////	console.log(`${i}: ${item} внутри массива ${number}`);
-////});
+//////	console.log(`${i}: ${item} внутри массива ${number}`);
+//////});
 //for(var i=0;i<number.length;i++){
 //    sum = sum + Number(number[i]);
 //}
@@ -988,10 +988,33 @@
 //}
 ////Дан массив с элементами 1, 2, 3, 4, 5, 6, 7, 8, 9. 
 ////С помощью цикла for создайте строку '-1-2-3-4-5-6-7-8-9-'.
-
-
 //let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //for (let i = 0; i < arr.length; i++) {
 //    document.write(`-${arr[i]}`);
 //}
 //document.write('-');
+
+//const str = '51555';
+//const sum = str
+//	.split('')
+//	.map(Number);
+//	//.reduce((prev, curr) => prev + curr, 0);
+//console.log(sum);
+
+
+let str = '5151515151';
+let result = 0;
+let i = 0;
+while (i < str.length) {
+	result += Number(str[i]);
+	i++;
+}
+console.log(result);
+
+
+//let number = '222';
+//let f = 0;
+//for (let i = 0; i < number.length; i++){
+//	f = f + Number(number[i]);
+//}
+//console.log(f);
