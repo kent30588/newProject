@@ -1002,14 +1002,14 @@
 //console.log(sum);
 
 
-let str = '5151515151';
-let result = 0;
-let i = 0;
-while (i < str.length) {
-	result += Number(str[i]);
-	i++;
-}
-console.log(result);
+//let str = '5151515151';
+//let result = 0;
+//let i = 0;
+//while (i < str.length) {
+//	result += Number(str[i]);
+//	i++;
+//}
+//console.log(result);
 
 
 //let number = '222';
@@ -1018,3 +1018,53 @@ console.log(result);
 //	f = f + Number(number[i]);
 //}
 //console.log(f);
+
+//                                События и их обработчики
+
+const btn = document.querySelector('button');
+const overlay = document.querySelector('.overlay');
+//btn.onclick = function () {// так делать не нужно
+//	alert('Привет, ты нажал на кнопку');
+//};
+// Добавляем обработчик событий -> (1 аргумент название события 'click' , callback функция() => )
+//btn.addEventListener('mouseenter', () => {
+//	alert('Привет, ты нажал на кнопку');
+//});
+
+//btn.addEventListener('click', (event) => {
+//	event.target.style.backgroundColor = 'red';
+//});
+//btn.removeEventListener('click', (event) => {
+//	event.target.style.backgroundColor = 'red';
+//});
+
+//удаление собитыя
+//let i = 0;
+//const deletElement = (e) => {
+//	console.log(e.target);
+//	i++;
+//	if (i == 1) {
+//		btn.removeEventListener('click', deletElement);
+//	}
+//};
+////клик на кнопку -> запуск функции с кодом console.log(e/target)-> срабатывает if условие и удаляет обработчик
+//btn.addEventListener('click', deletElement);
+// Всплытие событий
+
+
+//const deletElement = (e) => {
+//	console.log(e.target);
+//	console.log(e.type);
+//};
+//btn.addEventListener('click', deletElement);
+//overlay.addEventListener('click', deletElement);
+
+//Отмена стандартного поведения в браузере
+
+const link = document.querySelector('a');
+
+link.addEventListener('click', function (event) {
+	//для того что бы отменить стандартное поведение
+	event.preventDefault();
+	console.log(event.target);
+});
