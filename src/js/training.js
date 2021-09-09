@@ -1021,8 +1021,8 @@
 
 //                                События и их обработчики
 
-const btn = document.querySelector('button');
-const overlay = document.querySelector('.overlay');
+//const btn = document.querySelector('button');
+//const overlay = document.querySelector('.overlay');
 //btn.onclick = function () {// так делать не нужно
 //	alert('Привет, ты нажал на кнопку');
 //};
@@ -1061,10 +1061,26 @@ const overlay = document.querySelector('.overlay');
 
 //Отмена стандартного поведения в браузере
 
-const link = document.querySelector('a');
+//const link = document.querySelector('a');
 
-link.addEventListener('click', function (event) {
-	//для того что бы отменить стандартное поведение
-	event.preventDefault();
-	console.log(event.target);
-});
+//link.addEventListener('click', function (event) {
+//	//для того что бы отменить стандартное поведение
+//	event.preventDefault();
+//	console.log(event.target);
+//});
+
+//                                   Навигация по DOm- элементам data -атрибуты. Преимущество for / of
+
+//console.log(document.documentElement);
+//console.log(document.head);
+//console.log(document.body);
+//console.log(document.body.childNodes);
+//console.log(document.body.firstChild);
+//console.log(document.body.lastChild);
+//console.log(document.querySelector('#current').parentNode);
+//console.log(document.querySelector('#current').parentNode.parentNode);
+//console.log(document.querySelector('[data-current="3"]'));
+//console.log(document.querySelector('[data-current="3"]').nextSibling.nextSibling);
+//console.log(document.querySelector('[data-current="3"]').previousSibling);
+
+
