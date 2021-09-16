@@ -1002,14 +1002,14 @@
 //console.log(sum);
 
 
-let str = '5151515151';
-let result = 0;
-let i = 0;
-while (i < str.length) {
-	result += Number(str[i]);
-	i++;
-}
-console.log(result);
+//let str = '5151515151';
+//let result = 0;
+//let i = 0;
+//while (i < str.length) {
+//	result += Number(str[i]);
+//	i++;
+//}
+//console.log(result);
 
 
 //let number = '222';
