@@ -1017,4 +1017,74 @@
 //for (let i = 0; i < number.length; i++){
 //	f = f + Number(number[i]);
 //}
+<<<<<<< HEAD
 //console.log(f);
+=======
+//console.log(f);
+
+//                                События и их обработчики
+
+//const btn = document.querySelector('button');
+//const overlay = document.querySelector('.overlay');
+//btn.onclick = function () {// так делать не нужно
+//	alert('Привет, ты нажал на кнопку');
+//};
+// Добавляем обработчик событий -> (1 аргумент название события 'click' , callback функция() => )
+//btn.addEventListener('mouseenter', () => {
+//	alert('Привет, ты нажал на кнопку');
+//});
+
+//btn.addEventListener('click', (event) => {
+//	event.target.style.backgroundColor = 'red';
+//});
+//btn.removeEventListener('click', (event) => {
+//	event.target.style.backgroundColor = 'red';
+//});
+
+//удаление собитыя
+//let i = 0;
+//const deletElement = (e) => {
+//	console.log(e.target);
+//	i++;
+//	if (i == 1) {
+//		btn.removeEventListener('click', deletElement);
+//	}
+//};
+////клик на кнопку -> запуск функции с кодом console.log(e/target)-> срабатывает if условие и удаляет обработчик
+//btn.addEventListener('click', deletElement);
+// Всплытие событий
+
+
+//const deletElement = (e) => {
+//	console.log(e.target);
+//	console.log(e.type);
+//};
+//btn.addEventListener('click', deletElement);
+//overlay.addEventListener('click', deletElement);
+
+//Отмена стандартного поведения в браузере
+
+//const link = document.querySelector('a');
+
+//link.addEventListener('click', function (event) {
+//	//для того что бы отменить стандартное поведение
+//	event.preventDefault();
+//	console.log(event.target);
+//});
+
+//                                   Навигация по DOm- элементам data -атрибуты. Преимущество for / of
+
+//console.log(document.documentElement);
+//console.log(document.head);
+//console.log(document.body);
+//console.log(document.body.childNodes);
+//console.log(document.body.firstChild);
+//console.log(document.body.lastChild);
+//console.log(document.querySelector('#current').parentNode);
+//console.log(document.querySelector('#current').parentNode.parentNode);
+//console.log(document.querySelector('[data-current="3"]'));
+//console.log(document.querySelector('[data-current="3"]').nextSibling.nextSibling);
+//console.log(document.querySelector('[data-current="3"]').previousSibling);
+
+
+>>>>>>> 2e1efe60dbe3763da8ebfb2f3791d5d7854ba6b8
