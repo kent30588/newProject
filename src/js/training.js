@@ -1017,9 +1017,7 @@
 //for (let i = 0; i < number.length; i++){
 //	f = f + Number(number[i]);
 //}
-<<<<<<< HEAD
 //console.log(f);
-=======
 //console.log(f);
 
 //                                События и их обработчики
@@ -1087,4 +1085,26 @@
 //console.log(document.querySelector('[data-current="3"]').previousSibling);
 
 
->>>>>>> 2e1efe60dbe3763da8ebfb2f3791d5d7854ba6b8
+//                         Действия с элементами на странице
+
+const box = document.getElementById('box'),
+    btns = document.getElementsByTagName('button'),
+    circlse = document.getElementsByClassName('circle'),
+    hearts = document.querySelectorAll('.heart'),
+    oneHeart = document.querySelector('.heart'),
+    wrapper = document.querySelector('.wrapper');
+
+box.style.backgroundColor = 'green';
+box.style.width = '500px';
+
+btns[1].style.borderRadius = '100%';
+
+const div = document.createElement('div');
+div.classList.add('black');
+wrapper.prepend(div);
+//hearts[0].after(div);
+//circlse[0].remove();
+//hearts[0].replaceWith(circlse[0]);
+//div.innerHTML = '<h3>Hello</h3>';
+//div.textContent = 'Hello';
+div.insertAdjacentHTML('afterend', '<h3>Hello</h3>');
