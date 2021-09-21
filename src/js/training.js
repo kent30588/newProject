@@ -1087,24 +1087,73 @@
 
 //                         Действия с элементами на странице
 
-const box = document.getElementById('box'),
-    btns = document.getElementsByTagName('button'),
-    circlse = document.getElementsByClassName('circle'),
-    hearts = document.querySelectorAll('.heart'),
-    oneHeart = document.querySelector('.heart'),
-    wrapper = document.querySelector('.wrapper');
+//const box = document.getElementById('box'),
+//    btns = document.getElementsByTagName('button'),
+//    circlse = document.getElementsByClassName('circle'),
+//    hearts = document.querySelectorAll('.heart'),
+//    oneHeart = document.querySelector('.heart'),
+//    wrapper = document.querySelector('.wrapper');
 
-box.style.backgroundColor = 'green';
-box.style.width = '500px';
+//box.style.backgroundColor = 'green';
+//box.style.width = '500px';
 
-btns[1].style.borderRadius = '100%';
+//btns[1].style.borderRadius = '100%';
 
-const div = document.createElement('div');
-div.classList.add('black');
-wrapper.prepend(div);
+//const div = document.createElement('div');
+//div.classList.add('black');
+//wrapper.prepend(div);
 //hearts[0].after(div);
 //circlse[0].remove();
 //hearts[0].replaceWith(circlse[0]);
 //div.innerHTML = '<h3>Hello</h3>';
 //div.textContent = 'Hello';
-div.insertAdjacentHTML('afterend', '<h3>Hello</h3>');
+//div.insertAdjacentHTML('afterend', '<h3>Hello</h3>');
+
+//                                                ClassList и делегирование собитий
+
+const btns = document.querySelectorAll('button'),
+    wrapper = document.querySelector('.btn-block');
+
+//console.log(btns[0].classList.length);
+//console.log(btns[0].classList.item(0));
+//добавить класс
+//console.log(btns[4].classList.add('red'));
+//удалить класс
+//btns[0].classList.remove('blue');
+//добавить класс если его нет, удалить если есть
+//btns[1].classList.toggle('blue');
+//btns.forEach(item => {
+//    item.addEventListener('click', () => {
+//        item.classList.toggle('red');
+//    });
+//});
+// проверить есть класс или нет
+//console.log(btns[4].classList.add('red'));
+//if (btns[4].classList.contains('red')) {
+//    console.log('Такой класс есть');
+//}
+//-----
+//btns[0].addEventListener('click', () => {
+//    // if (!btns[1].classList.contains('red')) {
+//    //     btns[1].classList.add('red');
+//    // } else {
+//    //     btns[1].classList.remove('red');
+//    // }
+
+//});
+
+//wrapper.addEventListener('click', (event) => {
+//    if (event.target && event.target.matches('button.red')) {
+//        console.log('hello');
+//    }
+//});
+
+//btns.forEach(btn => {
+//    btn.addEventListener('click', () => {
+//        console.log('hello');
+//    });
+//});
+
+//const btn = document.createElement('button');
+//btn.classList.add('red');
+//wrapper.append(btn);
