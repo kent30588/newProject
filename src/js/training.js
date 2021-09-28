@@ -1083,4 +1083,44 @@
 //console.log(document.querySelector('[data-current="3"]').nextSibling.nextSibling);
 //console.log(document.querySelector('[data-current="3"]').previousSibling);
 
+//                                        Скрипты и время их выполнения setTimeout и setInterval
+//const btn = document.querySelector('.btn');
+//let timerId;
+//let i = 0;
 
+//function myAnimation() {
+//	const elem = document.querySelector('.box');
+//	let pos = 0;
+//	const id = setInterval(frame, 10);
+//	function frame() {
+//		if (pos == 300) {
+//			clearInterval(id);
+//		} else {
+//			pos++;
+//			elem.style.top = pos +'px';
+//			elem.style.left = pos +'px';
+//		}
+//	}
+//}
+
+//btn.addEventListener('click', myAnimation);
+
+
+//btn.addEventListener('click', () => {
+//	//const timerId = setTimeout(logger, 500);
+//	timerId = setInterval(logger, 500);
+//});
+
+
+//function logger() {
+//	if (i === 4) {
+//		clearInterval(timerId);
+//	}
+//	console.log('Привет');
+//	i++;
+//}
+
+//let id = setTimeout(function log() {
+//	console.log('Привет');
+//	id = setTimeout(log, 500);
+//}, 500);

@@ -52,6 +52,8 @@ a {
   margin-top: 10px;
 }
 
+
+
 .heart:before,
 .heart:after {
   position: absolute;
@@ -200,4 +202,26 @@ a {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
+}*/
+
+/* Скрипты и время их выполнения setTimeout и setInterval*/
+/*.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 3px solid red;
+}
+button {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: yellow;
+  border: none;
 }*/
