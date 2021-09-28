@@ -1200,3 +1200,35 @@
 //	console.log('Привет');
 //	id = setTimeout(log, 500);
 //}, 500);
+
+//                                  Работа с датами
+
+//const now = new Date();// покажет текущ. дат. и врем.
+//const now = new Date('2021-09-28');//2021-09-28T00:00:00.000Z
+//const now = new Date(2021, 8, 28, 20);
+const now = new Date('2021-09-28');
+console.log(now.setHours(40));
+console.log(now);
+
+//console.log(now.getFullYear());//метод getFullYear() получить тек. год
+//console.log(now.getMonth());// получ. тек. месяц 
+//console.log(now.getDate());// получ. тек. день
+//console.log(now.getDay());// номер дня недели
+//console.log(now.getHours());//тякущий час
+//console.log(now.getUTCHours());//0 пояс
+
+//console.log(now.getTimezoneOffset());// разница в минутах от 0 пояса
+//console.log(now.getTime());
+
+let start = new Date();
+for (let i = 0; i < 100000; i++){
+	let some = i ** 3;
+}
+
+let end = new Date();
+
+alert(`Цикл отработал за ${end - start} миллисекунд`);
+
+
+
+
