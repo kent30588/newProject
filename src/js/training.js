@@ -1206,9 +1206,9 @@
 //const now = new Date();// покажет текущ. дат. и врем.
 //const now = new Date('2021-09-28');//2021-09-28T00:00:00.000Z
 //const now = new Date(2021, 8, 28, 20);
-const now = new Date('2021-09-28');
-console.log(now.setHours(40));
-console.log(now);
+//const now = new Date('2021-09-28');
+//console.log(now.setHours(40));
+//console.log(now);
 
 //console.log(now.getFullYear());//метод getFullYear() получить тек. год
 //console.log(now.getMonth());// получ. тек. месяц 
@@ -1220,14 +1220,23 @@ console.log(now);
 //console.log(now.getTimezoneOffset());// разница в минутах от 0 пояса
 //console.log(now.getTime());
 
-let start = new Date();
-for (let i = 0; i < 100000; i++){
-	let some = i ** 3;
-}
+//let start = new Date();
+//for (let i = 0; i < 100000; i++){
+//	let some = i ** 3;
+//}
 
-let end = new Date();
+//let end = new Date();
 
-alert(`Цикл отработал за ${end - start} миллисекунд`);
+//alert(`Цикл отработал за ${end - start} миллисекунд`);
+
+//                       параметры документа, окна и работа с ними
+
+const box = document.querySelector('.box');
+
+const width = box.clientWidth;
+const height = box.clientHeight;
+console.log(width, height);
+
 
 
 
