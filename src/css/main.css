@@ -269,7 +269,7 @@ button {
     background-color: red;
 }*/
 /*параметры документа, окна и работа с ними  */
-.box {
+/*.box {
   box-sizing: border-box;
   width: 400px;
   height: 350px;
@@ -284,4 +284,9 @@ button {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
+}*/
+
+button {
+  width: 100px;
+  height: 30px;
 }
