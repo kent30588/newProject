@@ -1448,53 +1448,83 @@
 //	color: 'Black'
 //});
 
-class Component {
-	constructor(selector) {
-		this.$el = document.querySelector(selector);
-	}
-	hide() {
-		this.$el.style.display = 'none';
-	}
-	show() {
-		this.$el.style.display = 'block';
-	}
-}
+//class Component {
+//	constructor(selector) {
+//		this.$el = document.querySelector(selector);
+//	}
+//	hide() {
+//		this.$el.style.display = 'none';
+//	}
+//	show() {
+//		this.$el.style.display = 'block';
+//	}
+//}
 
-class Box extends Component {
-	constructor(options) {
-		super(options.selector);
-			this.$el.style.width = this.$el.style.height = options.size + 'px';
-			this.$el.style.backgroundColor= options.color;
+//class Box extends Component {
+//	constructor(options) {
+//		super(options.selector);
+//			this.$el.style.width = this.$el.style.height = options.size + 'px';
+//			this.$el.style.backgroundColor= options.color;
 		
-	}
-}
+//	}
+//}
 
-const box1 = new Box({
-	selector: '#box1',
-	size: 100,
-	color: 'red'
-});
+//const box1 = new Box({
+//	selector: '#box1',
+//	size: 100,
+//	color: 'red'
+//});
 
-const box2 = new Box({
-	selector: '#box2',
-	size: 120,
-	color: 'blue'
-});
+//const box2 = new Box({
+//	selector: '#box2',
+//	size: 120,
+//	color: 'blue'
+//});
 
-const btn = document.querySelector('button');
-btn.addEventListener('click', function () {
-	box1.hide();
-});
+//const btn = document.querySelector('button');
+//btn.addEventListener('click', function () {
+//	box1.hide();
+//});
 
-class Circle extends Box{
-	constructor(options) {
-		super(options);
-		this.$el.style.borderRadius = '50%';
-	}
-}
+//class Circle extends Box{
+//	constructor(options) {
+//		super(options);
+//		this.$el.style.borderRadius = '50%';
+//	}
+//}
 
-const c = new Circle({
-	selector: '#circle',
-	size: 90,
-	color: 'green'
-});
+//const c = new Circle({
+//	selector: '#circle',
+//	size: 90,
+//	color: 'green'
+//});
+//               JSON формат передачи данных, глубокое клонирование объектов
+
+//const persone = {
+//	name: 'Alex',
+//	tel: '+79260700593',
+//	parents: {
+//		mom: 'Olga',
+//		dad: 'Mike'
+//	}
+//};
+//console.log(persone);
+//console.log(JSON.stringify(persone));
+//console.log(JSON.parse(JSON.stringify(persone)));
+//создаем клон объекта 
+//const clone = JSON.parse(JSON.stringify(persone));
+//clone.parents.mom = 'Ann';
+//console.log(persone);
+//console.log(clone);
+
+
+
+
+
+
+
+
+
+
+
+
