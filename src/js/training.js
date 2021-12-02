@@ -1543,58 +1543,102 @@
 
 //                             promise
 
-console.log('Запрос данных');
-//resolve - выполнилось правильно,reject- не выполнилось
-const req = new Promise((resolve, reject) => {
-	//Имитация запроса на сервер
-	setTimeout(() => {
+//console.log('Запрос данных');
+////resolve - выполнилось правильно,reject- не выполнилось
+//const req = new Promise((resolve, reject) => {
+//	//Имитация запроса на сервер
+//	setTimeout(() => {
 
-		console.log('Подготовка данных...');
-		const product = {
-			name: 'TV',
-			price: 2000
-		};
-		resolve(product);
-	}, 2000);
-});
-//Этот метод выполнится в случае положительного исхода
-req.then((product) => {
-	return new Promise((resolve, reject) => {
-		setTimeout(() => {
-			product.status = 'Заказан';
-			resolve(product);
-		}, 2000);
-	});
-}).then(data => {
-	data.modify = true;
-	return data;
-}).then(data => {
-	console.log(data);
-	//cath выполнится при какой то ошибке
-}).catch(() => {
-	console.error('Произошла ошибка');
-	//finally выполнится в любом случае
-}).finally(() => {
-	console.log('Finally');
-});
+//		console.log('Подготовка данных...');
+//		const product = {
+//			name: 'TV',
+//			price: 2000
+//		};
+//		resolve(product);
+//	}, 2000);
+//});
+////Этот метод выполнится в случае положительного исхода
+//req.then((product) => {
+//	return new Promise((resolve, reject) => {
+//		setTimeout(() => {
+//			product.status = 'Заказан';
+//			resolve(product);
+//		}, 2000);
+//	});
+//}).then(data => {
+//	data.modify = true;
+//	return data;
+//}).then(data => {
+//	console.log(data);
+//	//cath выполнится при какой то ошибке
+//}).catch(() => {
+//	console.error('Произошла ошибка');
+//	//finally выполнится в любом случае
+//}).finally(() => {
+//	console.log('Finally');
+//});
 
 
-const test = time => {
-	return new Promise(resolve => {
-		setTimeout(() => resolve(), time);
-	});
-};
+//const test = time => {
+//	return new Promise(resolve => {
+//		setTimeout(() => resolve(), time);
+//	});
+//};
 
-//test(2000).then(() => console.log('2000'));
-//test(3000).then(() => console.log('3000'));
-//Ждем загрузки всех промисов и только тогда чт от оделаем
-Promise.all([test(2000), test(3000)]).then(() => {
-	console.log('All');
-});
-//race выполняет свои действия как только первый промис отработал правильно
-Promise.race([test(2000), test(3000)]).then(() => {
-	console.log('All');
-});
+////test(2000).then(() => console.log('2000'));
+////test(3000).then(() => console.log('3000'));
+////Ждем загрузки всех промисов и только тогда чт от оделаем
+//Promise.all([test(2000), test(3000)]).then(() => {
+//	console.log('All');
+//});
+////race выполняет свои действия как только первый промис отработал правильно
+//Promise.race([test(2000), test(3000)]).then(() => {
+//	console.log('All');
+//});
+
+//                    Методы перебора массивов
+
+//filter
+
+//const names = ['Ivan', 'Ann', 'Ksenia', 'Voldemars'];
+
+//const filterNames = names.filter(elem => elem.length <= 5);
+
+//console.log(names);
+
+//map
+
+//const answers = ['IvAn', 'AnnA', 'HellO'];
+
+//const result = answers.map(elem => elem.toLowerCase());
+//console.log(result);
+
+//reduce
+
+//const arr = [4, 5, 1, 3, 2, 6];
+
+//const res = arr.reduce((sum, current) => sum + current, 10);
+
+//console.log(res);
+
+//const arr = ['apple', 'pear', 'plum'];
+
+//const res = arr.reduce((sum, current) => `${sum}, ${current}`);
+
+//console.log(res);
+
+//const obj = {
+//	ivan: 'persone',
+//	ann: 'persone',
+//	dog: 'animal',
+//	cat: 'animal'
+//};
+
+//const newArr = Object.entries(obj)
+//	.filter(item => item[1] === 'persone')
+//	.map(item => item[0]);
+
+//console.log(newArr);
 
 
 
