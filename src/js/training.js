@@ -1643,42 +1643,66 @@
 
                                     // Работа с localStorage
 										
-const checkbox = document.querySelector('#checkbox');
-const form = document.querySelector('form');
-const change = document.querySelector('#color');
+//const checkbox = document.querySelector('#checkbox');
+//const form = document.querySelector('form');
+//const change = document.querySelector('#color');
 
-if (localStorage.getItem('isChecked')) {
-	checkbox.checked = true;
-}
+//if (localStorage.getItem('isChecked')) {
+//	checkbox.checked = true;
+//}
 
-if (localStorage.getItem('bg') === 'changed') {
-	form.style.backgroundColor = 'red';
-}
+//if (localStorage.getItem('bg') === 'changed') {
+//	form.style.backgroundColor = 'red';
+//}
 
-checkbox.addEventListener('change', () => {
-	localStorage.setItem('isChecked', true);
-});
+//checkbox.addEventListener('change', () => {
+//	localStorage.setItem('isChecked', true);
+//});
 
-change.addEventListener('click', () => {
-	if (localStorage.getItem('bg') === 'changed') {
-		localStorage.removeItem('bg');
-		form.style.backgroundColor = '#fff';
-	} else {
-		localStorage.setItem('bg', 'changed');
-		form.style.backgroundColor = 'red';
-	}
-});
+//change.addEventListener('click', () => {
+//	if (localStorage.getItem('bg') === 'changed') {
+//		localStorage.removeItem('bg');
+//		form.style.backgroundColor = '#fff';
+//	} else {
+//		localStorage.setItem('bg', 'changed');
+//		form.style.backgroundColor = 'red';
+//	}
+//});
 
-const persone = {
-	name: 'Alex',
-	age: 25
-};
+//const persone = {
+//	name: 'Alex',
+//	age: 25
+//};
 
-const serializedPersone = JSON.stringify(persone);
+//const serializedPersone = JSON.stringify(persone);
 
-localStorage.setItem('Alex', persone);
+//localStorage.setItem('Alex', persone);
 
-console.log(localStorage.getItem('Alex'));
+//console.log(localStorage.getItem('Alex'));
+
+//                             Регулярные выражения
+
+//new RegExp('pattern', 'flags');
+///pfttern/f
+
+//const ans = prompt('Введите число');
+//const reg = /\d/ig;
+//console.log(/n/ig.test(ans));
+//console.log(ans.match(reg));
+
+//console.log(ans.search(reg));
+//console.log(ans.match(/n/ig));
+
+//const pass = prompt('Ваш пароль');
+
+//console.log(pass.replace('a', '*'));
+
+//console.log('12-34-56'.replace(/-/g, ':'));
+
+//const str = 'My name is R2D2';
+
+//console.log(str.match(/\s/ig));
+
 
 
 
