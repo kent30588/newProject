@@ -1744,37 +1744,57 @@ ivan.say();
 */
 //Тот же код с инкапсуляцией
 
-class User {
-	constructor (name, age){
-		this.name = name;
-		this._age = age;
-	}
+//class User {
+//	constructor (name, age){
+//		this.name = name;
+//		this._age = age;
+//	}
 
-	say() {
-		console.log(`Имя пользователя ${this.name}, возраст ${this._age}`);
-	}
+//	say() {
+//		console.log(`Имя пользователя ${this.name}, возраст ${this._age}`);
+//	}
 
-	get age() {
-		return this._age;
-	}
+//	get age() {
+//		return this._age;
+//	}
 
-	set age(age) {
-		if (typeof age === 'number' && age > 0 && age < 110) {
-			this._age = age;
-		} else {
-			console.log('Недопустимое значение');
-		}
-	}
-}
+//	set age(age) {
+//		if (typeof age === 'number' && age > 0 && age < 110) {
+//			this._age = age;
+//		} else {
+//			console.log('Недопустимое значение');
+//		}
+//	}
+//}
 
-const ivan = new User('Ivan', 27);
-console.log(ivan.age);
-ivan.age = 99;
-console.log(ivan.age);
-ivan.say();
-
-
+//const ivan = new User('Ivan', 27);
+//console.log(ivan.age);
+//ivan.age = 99;
+//console.log(ivan.age);
+//ivan.say();
 
 
+//                 Прием Модуль
 
+const number = 1;
+
+(function () {
+	let number = 2;
+	console.log(number);
+	console.log(number +3);
+}());
+
+console.log(number);
+
+const user = (function () {
+	const privat = function () {
+		console.log('Приватная функция');
+	};
+
+	return {
+		sayHello: privat
+	};
+}());
+
+user.sayHello();
 
