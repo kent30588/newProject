@@ -1776,25 +1776,38 @@ ivan.say();
 
 //                 Прием Модуль
 
-const number = 1;
+//const number = 1;
 
-(function () {
-	let number = 2;
-	console.log(number);
-	console.log(number +3);
-}());
+//(function () {
+//	let number = 2;
+//	console.log(number);
+//	console.log(number +3);
+//}());
 
-console.log(number);
+//console.log(number);
 
-const user = (function () {
-	const privat = function () {
-		console.log('Приватная функция');
-	};
+//const user = (function () {
+//	const privat = function () {
+//		console.log('Приватная функция');
+//	};
 
-	return {
-		sayHello: privat
-	};
-}());
+//	return {
+//		sayHello: privat
+//	};
+//}());
 
-user.sayHello();
+//user.sayHello();
 
+//             Ошибки try/catch
+
+try {
+	console.log('Normal');
+	console.log(a);
+} catch (error) {
+	console.log(error.name);
+	console.log(error.message);
+	console.log(error.stack);
+
+}
+
+console.log('Still normal');
