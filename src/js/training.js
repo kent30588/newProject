@@ -1876,3 +1876,23 @@ let pos = 0;
 
 //let id = requestAnimationFrame(myAnimation);
 //cancelAnimationFrame(id);
+
+//                     Event loop фсинхронные и синхронные операции
+
+//console.log(1);//синхронная команда
+
+//setTimeout(() => {
+//	console.log('Таймаут');
+//}, 4000);//асинхронная команда
+
+//setTimeout(() => {
+//	console.log('Таймаут_4000');
+//}, 4000);
+
+//console.log(2);
+
+setTimeout(() => {
+	console.log(1);
+}, 0);
+
+console.log(2);
