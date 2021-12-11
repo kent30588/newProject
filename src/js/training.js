@@ -1800,14 +1800,43 @@ ivan.say();
 
 //             Ошибки try/catch
 
-try {
-	console.log('Normal');
-	console.log(a);
-} catch (error) {
-	console.log(error.name);
-	console.log(error.message);
-	console.log(error.stack);
+//try {
+//	console.log('Normal');
+//	console.log(a);
+//} catch (error) {
+//	console.log(error.name);
+//	console.log(error.message);
+//	console.log(error.stack);
 
-}
+//}
 
-console.log('Still normal');
+//console.log('Still normal');
+
+//function* generator() {
+//	yield 'S';
+//	yield 'c';
+//	yield 'r';
+//	yield 'i';
+//	yield 'p';
+//	yield 't';
+
+//}
+
+//const src = generator();
+//console.log(src.next().value);
+
+//function* count(n) {
+//	for (let i = 0; i < n; i++){
+//		yield i;
+//	}
+//}
+
+//for (let k of count(7)) {
+//	console.log(k);
+//}
+
+//const counter = count(7);
+//console.log(counter.next().value);
+//console.log(counter.next().value);
+//console.log(counter.next().value);
+//console.log(counter.next().value);

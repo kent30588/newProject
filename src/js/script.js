@@ -5,4 +5,3 @@
 //myModuleInstanse.hello();
 //myModuleInstanse.goodbye();
 
-import { one } from './main';

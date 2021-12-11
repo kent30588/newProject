@@ -9,4 +9,3 @@
 
 //module.exports = myModule;
 
-export let one = 1;
